@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind E-Commerce</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="">
+  <!-- Header Start -->
+  <header class="py-4 shadow-sm bg-white">
+    <div class="container flex items-center justify-between">
+      <a href="">
+        <img src="/image/logo.svg" alt="">
+      </a>
+      <div class="w-full max-w-xl relative flex">
+        <span class="absolute left-4 top-3 text-lg text-gray-400">
+          <i class="fa fa-search"></i>
+        </span>
+        <input class="w-full border border-r-0 py-3 pl-12 rounded-l-md focus:outline-none" type="text"
+          placeholder="Search">
+        <button
+          class="bg-primary px-8 border border-primary text-white rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a class="text-center text-gray-700 hover:text-primary transition relative" href="">
+          <div class="text-2xl">
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="text-xs leading-3">
+            Wish List
+          </div>
+          <span
+            class="absolute right-0 -top-1 h-5 w-5 rounded-full bg-primary text-white flex items-center justify-center text-xs">9</span>
+        </a>
+        <a class="text-center text-gray-700 hover:text-primary transition relative" href="">
+          <div class="text-2xl">
+            <i class="fa-solid fa-cart-arrow-down"></i>
+          </div>
+          <div class="text-xs leading-3">
+            Cart
+          </div>
+          <span
+            class="absolute -right-3 -top-1 h-5 w-5 rounded-full bg-primary text-white flex items-center justify-center text-xs">9</span>
+        </a>
+        <a class="text-center text-gray-700 hover:text-primary transition relative" href="">
+          <div class="text-2xl">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="text-xs leading-3">
+            Account
+          </div>
+
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- navber start -->
+  <nav class="bg-gray-800">
+    <div class="container flex ">
+      <div class="bg-primary px-8 py-4 items-center cursor-pointer relative group">
+        <span class="text-white">
+          <i class="fas fa-bars"></i>
+        </span>
+        <span class="capitalize text-white ml-2">Al Categories</span>
+
+        <div
+          class="absolute w-full py-3 left-0 top-full bg-white shadow-md divide-y divide-gray-500 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+          <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+            <img src="/image/140-1408898_png-file-svg-bed-bedroom-icon.png" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">BedRoom</span>
+          </a>
+          <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+            <img src="/image/download.png" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Office</span>
+          </a>
+          <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+            <img src="/image/images.png" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">OutDoor</span>
+          </a>
+          <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+            <img src="/image/photo-1635594202056-9ea3b497e5c0.png" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Meetress</span>
+          </a>
+          <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+            <img src="/image/Sofa-lineart.png" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+          </a>
+          <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+            <img src="/image/Sofa-lineart.png" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center justify-between flex-grow pl-12">
+        <div class="flex items-center uppercase space-x-6">
+          <a class="text-gray-200 hover:text-white bg-transparent" href="">Home</a>
+          <a class="text-gray-200 hover:text-white bg-transparent" href="">Shop</a>
+          <a class="text-gray-200 hover:text-white bg-transparent" href="">About Us</a>
+          <a class="text-gray-200 hover:text-white bg-transparent" href="">Contact Us</a>
+        </div>
+        <a class="text-gray-200 hover:text-white bg-transparent" href="">Login/Register</a>
+      </div>
+
+    </div>
+  </nav>
+  <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url(/image/banner-2.jpg);">
+    <div class="container">
+      <h1 class="text-6xl text-gray-800 mb-4 font-medium capitalize">Best Collection For <br> Home Decoration</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate <br> rhoncus pellentesque
+        id
+        integer neque, vel accumsan dolor diam.</p>
+      <div class="mt-12">
+        <a class="bg-primary border border-primary px-8 py-3 rounded-md text-white font-medium hover:bg-transparent hover:text-primary transition"
+          href="" tabindex="0">Shop Now</a>
+      </div>
+    </div>
+  </div>
+  <!-- End navber -->
+  <div class="container py-16">
+    <div class="w-10/12 grid grid-cols-3 gap-6 mx-auto justify-center">
+      <div class="border border-primary px-6 py-4 rounded-md flex mx-auto items-center justify-center gap-5">
+        <img src="/image/delivery-van.svg" class="h-12 w-12 object-contain" alt="">
+        <div>
+          <h2 class="text-lg font-medium text-gray-800">Free shipping</h2>
+          <p class="text-sm text-gray-400">Orders over $200</p>
+        </div>
+        
+      </div>
+      <div class="border border-primary px-6 py-4 rounded-md flex mx-auto items-center justify-center gap-5">
+        <img src="/image/money-back.svg" class="h-12 w-12 object-contain" alt="">
+        <div>
+          <h2 class="text-lg font-medium text-gray-800">Money Returns</h2>
+          <p class="text-sm text-gray-400">30 Days money return
+
+          </p>
+        </div>
+        
+      </div>
+      <div class="border border-primary px-6 py-4 rounded-md flex mx-auto items-center justify-center gap-5">
+        <img src="/image/service-hours.svg" class="h-12 w-12 object-contain" alt="">
+        <div>
+          <h2 class="text-lg font-medium text-gray-800">24/7 Support
+          </h2>
+          <p class="text-sm text-gray-400">Customer support
+
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Categories start -->
+   <div class="container py-16">
+     <h2 class="text-3xl uppercase text-gray-800 font-medium mb-6">SHOP BY CATEGORY</h2>
+     <div class="grid grid-cols-3 gap-3">
+         <div class="relative rounded-sm overflow-hidden group">
+           <img src="/image/category-1.jpg" class="w-full" alt="">
+           <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center font-Roboto text-white text-lg font-medium uppercase group-hover:bg-opacity-60 transition" href="">BeadRoom</a>
+         </div>
+         <div class="relative rounded-sm overflow-hidden group">
+          <img src="/image/category-1.jpg" class="w-full" alt="">
+          <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center font-Roboto text-white text-lg font-medium uppercase group-hover:bg-opacity-60 transition" href="">BeadRoom</a>
+        </div>
+        <div class="relative rounded-sm overflow-hidden group">
+          <img src="/image/category-1.jpg" class="w-full" alt="">
+          <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center font-Roboto text-white text-lg font-medium uppercase group-hover:bg-opacity-60 transition" href="">BeadRoom</a>
+        </div>
+        <div class="relative rounded-sm overflow-hidden group">
+          <img src="/image/category-1.jpg" class="w-full" alt="">
+          <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center font-Roboto text-white text-lg font-medium uppercase group-hover:bg-opacity-60 transition" href="">BeadRoom</a>
+        </div>
+        <div class="relative rounded-sm overflow-hidden group">
+          <img src="/image/category-1.jpg" class="w-full" alt="">
+          <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center font-Roboto text-white text-lg font-medium uppercase group-hover:bg-opacity-60 transition" href="">BeadRoom</a>
+        </div>
+        <div class="relative rounded-sm overflow-hidden group">
+          <img src="/image/category-1.jpg" class="w-full" alt="">
+          <a class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center font-Roboto text-white text-lg font-medium uppercase group-hover:bg-opacity-60 transition" href="">BeadRoom</a>
+        </div>
+     </div>
+
+   </div>
+  <!-- end Categories -->
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
