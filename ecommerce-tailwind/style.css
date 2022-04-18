@@ -5,10 +5,28 @@
 @tailwind utilities;
 
 @layer base{
-    body{
-         @apply font-Poppins;
-    },
+    
+    body {
+        background-color: #eee;
+        color: #7a7572;
+      }
     h1,h2, h3, h4, h5, h6{
         @apply font-Roboto
+    }
+}
+
+@layer components{
+    .size-seletior input:checked + label{
+        @apply bg-primary text-white;
+    }
+}
+
+@layer components{
+    .color-seletior input:checked + label{
+        @apply ring-2 ring-primary;
+    }
+
+    .input-box{
+        @apply block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0;
     }
 }
